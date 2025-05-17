@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prairie Tellers - Stories from the Heart of America</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome for icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <style>
+        /* Custom styles */
+        body {
+            font-family: 'Georgia', serif;
+            background-color: #f8f9fa;
+            color: #333;
+        }
+        
+        .navbar-brand {
+            font-family: 'Georgia', serif;
+            font-weight: bold;
+            font-size: 1.75rem;
+        }
+        
+        .hero-section {
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url('/api/placeholder/1200/500');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+            padding: 7rem 0;
+        }
+        
+        .story-card {
+            transition: transform 0.3s;
+            height: 100%;
+        }
+        
+        .story-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .footer {
+            background-color: #343a40;
+            color: white;
+        }
+        
+        .event-date {
+            font-size: 1.5rem;
+            font-weight: bold;
+            text-align: center;
+            background-color: #f8f9fa;
+            padding: 1rem;
+            border-radius: 0.25rem;
+        }
+        
+        .quote-section {
+            background-color: #e9ecef;
+            font-style: italic;
+        }
+        
+        .quote-mark {
+            font-size: 4rem;
+            line-height: 0;
+            color: #adb5bd;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">Prairie Tellers</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#stories">Stories</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#events">Events</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section text-center">
+        <div class="container">
+            <h1 class="display-3 mb-4">Stories from the Heart of America</h1>
+            <p class="lead mb-4">Join us for captivating tales and personal narratives that celebrate the richness of prairie life.</p>
+            <button class="btn btn-primary btn-lg me-2">Upcoming Events</button>
+            <button class="btn btn-outline-light btn-lg">Our Storytellers</button>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <img src="/api/placeholder/600/400" alt="Storytelling Event" class="img-fluid rounded shadow">
+                </div>
+                <div class="col-lg-6">
+                    <h2 class="display-6 mb-3">About Prairie Tellers</h2>
+                    <p class="lead">We are dedicated to preserving and celebrating the art of storytelling in the American Midwest.</p>
+                    <p>Founded in 2005, Prairie Tellers brings together storytellers from across the region to share personal narratives, folktales, and historical accounts that connect us to our shared heritage. Our community-based organization hosts regular events, workshops, and an annual festival that attracts visitors from around the country.</p>
+                    <p>Through the power of oral tradition, we aim to strengthen community bonds, preserve local history, and inspire the next generation of storytellers.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quote Section -->
+    <section class="quote-section py-5 text-center">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <span class="quote-mark">"</span>
+                    <p class="lead mb-4">Stories are a communal currency of humanity. Through them, we share experience, understand each other's perspectives, and recognize ourselves in others.</p>
+                    <p class="fw-bold">— Sarah Johnson, Founder</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Stories Section -->
+    <section id="stories" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="display-6 text-center mb-5">Featured Stories</h2>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="card story-card shadow-sm">
+                        <img src="/api/placeholder/400/250" class="card-img-top" alt="Story thumbnail">
+                        <div class="card-body">
+                            <h5 class="card-title">Harvest Memories</h5>
+                            <p class="card-text">Jack Thompson shares stories of growing up on a wheat farm in the 1950s, with tales of community harvests and county fairs.</p>
+                            <a href="#" class="btn btn-sm btn-outline-primary">Listen Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card story-card shadow-sm">
+                        <img src="/api/placeholder/400/250" class="card-img-top" alt="Story thumbnail">
+                        <div class="card-body">
+                            <h5 class="card-title">River Tales</h5>
+                            <p class="card-text">Maria Gonzalez recounts legends and personal stories connected to the Missouri River that shaped her childhood.</p>
+                            <a href="#" class="btn btn-sm btn-outline-primary">Listen Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card story-card shadow-sm">
+                        <img src="/api/placeholder/400/250" class="card-img-top" alt="Story thumbnail">
+                        <div class="card-body">
+                            <h5 class="card-title">Small Town Heroes</h5>
+                            <p class="card-text">A collection of inspirational stories about everyday heroes who made a difference in rural communities across the Midwest.</p>
+                            <a href="#" class="btn btn-sm btn-outline-primary">Listen Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-4">
+                <a href="#" class="btn btn-primary">Browse All Stories</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Events Section -->
+    <section id="events" class="py-5">
+        <div class="container">
+            <h2 class="display-6 text-center mb-5">Upcoming Events</h2>
+            <div class="row">
+                <div class="col-md-6 mb-4">
+                    <div class="card shadow-sm">
+                        <div class="row g-0">
+                            <div class="col-3">
+                                <div class="event-date">
+                                    <div>MAY</div>
+                                    <div>24</div>
+                                </div>
+                            </div>
+                            <div class="col-9">
+                                <div class="card-body">
+                                    <h5 class="card-title">Spring Storytelling Night</h5>
+                                    <p class="card-text"><i class="fas fa-map-marker-alt me-2"></i>Community Center, Lincoln</p>
+                                    <p class="card-text">Join us for an evening of heartwarming tales as we welcome the spring season with stories of renewal and growth.</p>
+                                    <a href="#" class="btn btn-sm btn-outline-primary">Learn More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-4">
+                    <div class="card shadow-sm">
+                        <div class="row g-0">
+                            <div class="col-3">
+                                <div class="event-date">
+                                    <div>JUN</div>
+                                    <div>12</div>
+                                </div>
+                            </div>
+                            <div class="col-9">
+                                <div class="card-body">
+                                    <h5 class="card-title">Storytelling Workshop</h5>
+                                    <p class="card-text"><i class="fas fa-map-marker-alt me-2"></i>Public Library, Omaha</p>
+                                    <p class="card-text">Learn the art of crafting and delivering compelling stories with master storyteller James Wilson.</p>
+                                    <a href="#" class="btn btn-sm btn-outline-primary">Learn More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-4">
+                    <div class="card shadow-sm">
+                        <div class="row g-0">
+                            <div class="col-3">
+                                <div class="event-date">
+                                    <div>JUL</div>
+                                    <div>8</div>
+                                </div>
+                            </div>
+                            <div class="col-9">
+                                <div class="card-body">
+                                    <h5 class="card-title">Stories Under the Stars</h5>
+                                    <p class="card-text"><i class="fas fa-map-marker-alt me-2"></i>Riverside Park, Des Moines</p>
+                                    <p class="card-text">Bring a blanket and enjoy an outdoor evening of captivating stories and folk music.</p>
+                                    <a href="#" class="btn btn-sm btn-outline-primary">Learn More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-4">
+                    <div class="card shadow-sm">
+                        <div class="row g-0">
+                            <div class="col-3">
+                                <div class="event-date">
+                                    <div>AUG</div>
+                                    <div>20</div>
+                                </div>
+                            </div>
+                            <div class="col-9">
+                                <div class="card-body">
+                                    <h5 class="card-title">Annual Prairie Festival</h5>
+                                    <p class="card-text"><i class="fas fa-map-marker-alt me-2"></i>County Fairgrounds, Sioux Falls</p>
+                                    <p class="card-text">Our biggest event of the year featuring dozens of storytellers, workshops, food, and music.</p>
+                                    <a href="#" class="btn btn-sm btn-outline-primary">Learn More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="py-5 bg-primary text-white">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 text-center">
+                    <h2 class="mb-4">Join Our Community</h2>
+                    <p class="mb-4">Subscribe to our newsletter to receive updates about upcoming events, new stories, and opportunities to participate.</p>
+                    <form class="row g-2 justify-content-center">
+                        <div class="col-auto">
+                            <input type="email" class="form-control" placeholder="Your email address">
+                        </div>
+                        <div class="col-auto">
+                            <button type="submit" class="btn btn-light">Subscribe</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-5">
+        <div class="container">
+            <h2 class="display-6 text-center mb-5">Contact Us</h2>
+            <div class="row">
+                <div class="col-md-6 mb-4 mb-md-0">
+                    <form>
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Name</label>
+                            <input type="text" class="form-control" id="name">
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="email">
+                        </div>
+                        <div class="mb-3">
+                            <label for="message" class="form-label">Message</label>
+                            <textarea class="form-control" id="message" rows="4"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+                <div class="col-md-6">
+                    <h5>Prairie Tellers Organization</h5>
+                    <p><i class="fas fa-map-marker-alt me-2"></i>123 Main Street, Lincoln, NE 68508</p>
+                    <p><i class="fas fa-phone me-2"></i>(555) 123-4567</p>
+                    <p><i class="fas fa-envelope me-2"></i>info@prairietellers.us</p>
+                    <h5 class="mt-4">Follow Us</h5>
+                    <div class="d-flex">
+                        <a href="#" class="text-dark me-3"><i class="fab fa-facebook-f fa-2x"></i></a>
+                        <a href="#" class="text-dark me-3"><i class="fab fa-twitter fa-2x"></i></a>
+                        <a href="#" class="text-dark me-3"><i class="fab fa-instagram fa-2x"></i></a>
+                        <a href="#" class="text-dark"><i class="fab fa-youtube fa-2x"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 text-center text-md-start">
+                    <p>&copy; 2025 Prairie Tellers. All Rights Reserved.</p>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <a href="#" class="text-white me-3">Privacy Policy</a>
+                    <a href="#" class="text-white">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
